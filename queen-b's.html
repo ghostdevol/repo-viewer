@@ -1,222 +1,133 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Queen B's Food Truck</title><style>
+  <meta charset="UTF-8" />
+  <title>Queen B's Food Truck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-/* ===== RESET ===== */
+<body>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+  <!-- HEADER -->
+  <header class="gt-header">
+    <div class="container nav">
+      <div class="logo-mark">
+        <img src="assets/images/queenb-logo.jpg" class="logo-img" alt="Queen B's Logo" />
+        <div class="logo-text">Queen B's</div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="food-shelves.html">Food Shelves</a>
+        <a href="local-produce.html">Local Produce</a>
+      </nav>
+    </div>
+  </header>
 
-body{
-font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
-background:#fff8f0;
-color:#333;
-line-height:1.6;
-}
+  <main>
 
-/* ===== CONTAINER ===== */
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <img src="assets/images/queenb-logo.jpg" alt="Queen B's Logo" class="hero-logo" />
+          <h1><span>Queen B's</span> Food Truck</h1>
+          <p class="tagline">Fresh, bold comfort food for Minnesota nights.</p>
+          <p>
+            Queen B's is a Minnesota-based food truck concept inspired by Owenee Bethany Kruse —
+            built for flavor, warmth, and community.
+          </p>
 
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
+          <div class="hero-buttons">
+            <a href="#menu" class="btn">Menu</a>
+            <a href="#business-plan" class="btn secondary">Business Plan</a>
+          </div>
+        </div>
 
-/* ===== HEADER ===== */
+        <aside class="hero-card">
+          <h2>At a Glance</h2>
+          <p>
+            • Long Prairie, MN<br />
+            • Breweries, festivals, fairs, private events<br />
+            • High-margin comfort food<br />
+            • Peak season: May–October
+          </p>
+        </aside>
+      </div>
+    </section>
 
-header{
-background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-position:sticky;
-top:0;
-z-index:100;
-}
+    <!-- MENU -->
+    <section id="menu">
+      <div class="container">
+        <h2 class="section-title">Menu</h2>
+        <p class="section-subtitle">
+          Bold, craveable dishes made fresh.
+        </p>
 
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 0;
-}
+        <div class="menu-grid">
+          <article class="menu-item">
+            <img src="assets/images/cheesebread.jpg" alt="Cheesebread" class="menu-img" />
+            <h3>Cheesebread <span class="price">$8</span></h3>
+            <p>Buttery, molten, golden cheesebread with Queen B’s signature dipping sauce.</p>
+            <span class="menu-tag">Fan Favorite</span>
+          </article>
 
-.logo-mark{
-display:flex;
-align-items:center;
-gap:10px;
-}
+          <article class="menu-item">
+            <img src="assets/images/queenb-burger.jpg" alt="Queen B's Burger" class="menu-img" />
+            <h3>Queen B’s Burgers <span class="price">$13</span></h3>
+            <p>Smash-style burgers with caramelized onions, melted cheese, and house sauce.</p>
+            <span class="menu-tag">Signature</span>
+          </article>
 
-.logo-img{
-width:70px;
-height:70px;
-border-radius:50%;
-border:3px solid #FFD700;
-}
+          <article class="menu-item">
+            <img src="assets/images/chili.jpg" alt="Queen B's Chili" class="menu-img" />
+            <h3>Queen B’s Chili <span class="price">$10</span></h3>
+            <p>Slow-simmered beef chili with bold spices and sweet heat.</p>
+            <span class="menu-tag">Hearty</span>
+          </article>
 
-.logo-text{
-font-size:28px;
-font-weight:bold;
-color:#DAA520;
-}
+          <article class="menu-item">
+            <img src="assets/images/late-night.jpg" alt="Late Night Dinner" class="menu-img" />
+            <h3>Queen B’s Late Night Dinner <span class="price">$14</span></h3>
+            <p>Rotating comfort classics for after-hours cravings.</p>
+            <span class="menu-tag">Late Night</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
-/* ===== NAV ===== */
+    <!-- BUSINESS PLAN -->
+    <section id="business-plan">
+      <div class="container">
+        <h2 class="section-title">Business Plan Snapshot</h2>
+        <p class="section-subtitle">High-level overview of Queen B’s operations.</p>
+        <div class="menu-item">
+          <p>
+            Full business plan located at:
+            <strong>business-plan/queen-bs-business-plan.md</strong>
+          </p>
+        </div>
+      </div>
+    </section>
 
-nav a{
-margin-left:25px;
-font-weight:bold;
-color:#8B4513;
-text-decoration:none;
-}
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Booking, partnerships, and event inquiries.</p>
+        <div class="menu-item">
+          <p><strong>Email:</strong> <a href="mailto:blkruse24@gmail.com" class="neon-link">blkruse24@gmail.com</a></p>
+          <p><strong>Instagram:</strong> @queenbsfoodtruck</p>
+          <p><strong>Location:</strong> Long Prairie, Minnesota</p>
+        </div>
+      </div>
+    </section>
 
-nav a:hover{
-color:#DAA520;
-}
+  </main>
 
-/* ===== HERO ===== */
+  <footer>
+    Queen B's Food Truck — fresh, bold, and local.
+  </footer>
 
-.hero{
-padding:80px 0;
-text-align:center;
-background:linear-gradient(#fff8f0,#fff2e0);
-}
-
-.hero-logo{
-width:180px;
-border-radius:50%;
-border:5px solid #FFD700;
-margin-bottom:20px;
-}
-
-.tagline{
-font-size:20px;
-color:#8B4513;
-margin-bottom:30px;
-}
-
-/* ===== BUTTONS ===== */
-
-.btn{
-display:inline-block;
-padding:12px 25px;
-margin:5px;
-background:#DAA520;
-color:white;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-background:white;
-color:#DAA520;
-border:2px solid #DAA520;
-}
-
-/* ===== SECTION ===== */
-
-section{
-padding:70px 0;
-}
-
-.section-title{
-text-align:center;
-font-size:32px;
-margin-bottom:10px;
-color:#DAA520;
-}
-
-.section-subtitle{
-text-align:center;
-margin-bottom:40px;
-color:#777;
-}
-
-/* ===== MENU ===== */
-
-.menu-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.menu-item{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
-border-top:4px solid #FFD700;
-transition:.3s;
-}
-
-.menu-item:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
-
-.price{
-float:right;
-font-weight:bold;
-color:#DAA520;
-}
-
-.menu-tag{
-display:inline-block;
-margin-top:8px;
-background:#FFD700;
-color:white;
-padding:3px 10px;
-border-radius:15px;
-font-size:12px;
-}
-
-/* ===== LOCATION ===== */
-
-.location-box{
-background:white;
-padding:30px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* ===== FOOTER ===== */
-
-footer{
-background:#DAA520;
-color:white;
-text-align:center;
-padding:30px 0;
-margin-top:40px;
-}
-
-/* ===== MOBILE ===== */
-
-@media(max-width:768px){
-
-.nav{
-flex-direction:column;
-gap:10px;
-}
-
-nav{
-margin-top:10px;
-}
-
-.hero-logo{
-width:140px;
-}
-
-}
-
-</style></head><body><!-- HEADER --><header>
-<div class="container nav"><div class="logo-mark">
-<img src="logo.png" class="logo-img">
-<span class="logo-text">Queen B's</span>
-</div><nav>
- class="container"><h2 class="section-title">Where To Find Us</h2><div class="location-box"><p>We move around the city bringing sweet street eats.</p><p><strong>Follow our social media for daily locations!</strong></p></div></div></section><!-- CONTACT --><section id="contact"><div class="container"><h2 class="section-title">Contact</h2><div class="location-box"><p>Email: queenbsfoodtruck@email.com</p><p>Instagram: @queenbsfoodtruck</p><p>Facebook: Queen B's Food Truck</p></div></div></section><!-- FOOTER --><footer><p>© 2026 Queen B's Food Truck</p></footer></body>
-        </html>
+</body>
+</html>
