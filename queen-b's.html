@@ -6,128 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <!-- HEADER -->
+  <!-- ====== HEADER ====== -->
   <header class="gt-header">
     <div class="container nav">
       <div class="logo-mark">
         <img src="assets/images/queenb-logo.jpg" class="logo-img" alt="Queen B's Logo" />
         <div class="logo-text">Queen B's</div>
       </div>
+
       <nav>
-        <a href="index.html">Home</a>
-        <a href="food-shelves.html">Food Shelves</a>
-        <a href="local-produce.html">Local Produce</a>
+        <div class="dropdown">
+          <button class="dropbtn">Established Events ▾</button>
+          <div class="dropdown-content">
+            <a href="#event1">Summer Festival 2025</a>
+            <a href="#event2">Brewery Night 2025</a>
+            <a href="#event3">Holiday Pop-Up</a>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
 
   <main>
-
-    <!-- HERO -->
+    <!-- ====== HERO ====== -->
     <section class="hero">
       <div class="container hero-inner">
-        <div>
-          <img src="assets/images/queenb-logo.jpg" alt="Queen B's Logo" class="hero-logo" />
-          <h1><span>Queen B's</span> Food Truck</h1>
-          <p class="tagline">Fresh, bold comfort food for Minnesota nights.</p>
-          <p>
-            Queen B's is a Minnesota-based food truck concept inspired by Owenee Bethany Kruse —
-            built for flavor, warmth, and community.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#menu" class="btn">Menu</a>
-            <a href="#business-plan" class="btn secondary">Business Plan</a>
-          </div>
-        </div>
-
-        <aside class="hero-card">
-          <h2>At a Glance</h2>
-          <p>
-            • Long Prairie, MN<br />
-            • Breweries, festivals, fairs, private events<br />
-            • High-margin comfort food<br />
-            • Peak season: May–October
-          </p>
-        </aside>
+        <img src="assets/images/queenb-foodtruck.jpg" alt="Queen B's Food Truck" class="hero-truck" />
+        <h1>Queen B's Neon Food Truck</h1>
+        <p class="tagline">Serving bold comfort food under festival lights.</p>
       </div>
     </section>
 
-    <!-- MENU -->
-    <section id="menu">
+    <!-- ====== ESTABLISHED EVENTS ====== -->
+    <section id="events">
       <div class="container">
-        <h2 class="section-title">Menu</h2>
+        <h2 class="section-title">Established Events</h2>
+        <div class="events-grid">
+
+          <article id="event1" class="event-card">
+            <img src="assets/images/fries-basket.jpg" alt="Fries in Basket" />
+            <div class="event-info">
+              <h3>Summer Festival 2025</h3>
+              <p>Bright neon nights, festival-goers, and bold flavors in every bite.</p>
+            </div>
+          </article>
+
+          <article id="event2" class="event-card">
+            <img src="assets/images/queenb-foodtruck-night.jpg" alt="Food Truck at Brewery" />
+            <div class="event-info">
+              <h3>Brewery Night 2025</h3>
+              <p>Craft beers meet neon comfort food — perfect combo under colorful lights.</p>
+            </div>
+          </article>
+
+          <article id="event3" class="event-card">
+            <img src="assets/images/pop-up-event.jpg" alt="Holiday Pop-Up" />
+            <div class="event-info">
+              <h3>Holiday Pop-Up</h3>
+              <p>Winter vibes, festive graffiti branding, and food that glows as bright as the lights.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FOOD SHELVES + LOCAL PRODUCE ====== -->
+    <section id="food-shelves">
+      <div class="container">
+        <h2 class="section-title">Support Local & Fresh</h2>
         <p class="section-subtitle">
-          Bold, craveable dishes made fresh.
+          Queen B's supports our community! Here are local food shelves and fresh produce suppliers in Long Prairie and central Minnesota.
         </p>
 
-        <div class="menu-grid">
-          <article class="menu-item">
-            <img src="assets/images/cheesebread.jpg" alt="Cheesebread" class="menu-img" />
-            <h3>Cheesebread <span class="price">$8</span></h3>
-            <p>Buttery, molten, golden cheesebread with Queen B’s signature dipping sauce.</p>
-            <span class="menu-tag">Fan Favorite</span>
+        <div class="shelves-grid">
+
+          <!-- FOOD SHELVES -->
+          <article class="shelf-card">
+            <h3>Todd County Food Shelf</h3>
+            <p>Serving Long Prairie and surrounding areas.</p>
+            <a href="https://www.toddcountyfoodshelf.org" target="_blank" class="neon-link">Visit Website</a>
           </article>
 
-          <article class="menu-item">
-            <img src="assets/images/queenb-burger.jpg" alt="Queen B's Burger" class="menu-img" />
-            <h3>Queen B’s Burgers <span class="price">$13</span></h3>
-            <p>Smash-style burgers with caramelized onions, melted cheese, and house sauce.</p>
-            <span class="menu-tag">Signature</span>
+          <article class="shelf-card">
+            <h3>Salvation Army - St. Cloud</h3>
+            <p>Provides emergency food and meals for families.</p>
+            <a href="https://centralusa.salvationarmy.org/stcloud/" target="_blank" class="neon-link">Visit Website</a>
           </article>
 
-          <article class="menu-item">
-            <img src="assets/images/chili.jpg" alt="Queen B's Chili" class="menu-img" />
-            <h3>Queen B’s Chili <span class="price">$10</span></h3>
-            <p>Slow-simmered beef chili with bold spices and sweet heat.</p>
-            <span class="menu-tag">Hearty</span>
+          <article class="shelf-card">
+            <h3>Central Minnesota Food Bank</h3>
+            <p>Supports local food shelves in central Minnesota communities.</p>
+            <a href="https://www.centralmnfoodbank.org" target="_blank" class="neon-link">Visit Website</a>
           </article>
 
-          <article class="menu-item">
-            <img src="assets/images/late-night.jpg" alt="Late Night Dinner" class="menu-img" />
-            <h3>Queen B’s Late Night Dinner <span class="price">$14</span></h3>
-            <p>Rotating comfort classics for after-hours cravings.</p>
-            <span class="menu-tag">Late Night</span>
+          <article class="shelf-card">
+            <h3>Second Harvest Heartland</h3>
+            <p>Largest hunger relief organization in Minnesota.</p>
+            <a href="https://www.2harvest.org" target="_blank" class="neon-link">Visit Website</a>
           </article>
-        </div>
-      </div>
-    </section>
 
-    <!-- BUSINESS PLAN -->
-    <section id="business-plan">
-      <div class="container">
-        <h2 class="section-title">Business Plan Snapshot</h2>
-        <p class="section-subtitle">High-level overview of Queen B’s operations.</p>
-        <div class="menu-item">
-          <p>
-            Full business plan located at:
-            <strong>business-plan/queen-bs-business-plan.md</strong>
-          </p>
-        </div>
-      </div>
-    </section>
+          <!-- LOCAL PRODUCE -->
+          <article class="shelf-card">
+            <h3>Petron's Potatoes</h3>
+            <p>Fresh local potatoes from Todd County, MN — perfect for fries and comfort food.</p>
+            <a href="https://www.petronsfarm.com" target="_blank" class="neon-link">Visit Website</a>
+          </article>
 
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-subtitle">Booking, partnerships, and event inquiries.</p>
-        <div class="menu-item">
-          <p><strong>Email:</strong> <a href="mailto:blkruse24@gmail.com" class="neon-link">blkruse24@gmail.com</a></p>
-          <p><strong>Instagram:</strong> @queenbsfoodtruck</p>
-          <p><strong>Location:</strong> Long Prairie, Minnesota</p>
+          <article class="shelf-card">
+            <h3>Long Prairie MN Peaches</h3>
+            <p>Locally grown peaches — seasonal, sweet, and fresh for your dishes.</p>
+            <a href="https://www.longprairieproduce.com" target="_blank" class="neon-link">Visit Website</a>
+          </article>
+
         </div>
       </div>
     </section>
 
   </main>
-
-  <footer>
-    Queen B's Food Truck — fresh, bold, and local.
-  </footer>
 
 </body>
 </html>
